@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KG Bojamma Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            font-family: Poppins, sans-serif;
+        }
+        .container {
+            width: 100%;
+            min-height: 100vh; /* Ensure container covers viewport height */
+            position: relative;
+            background: #FBF8CC;
+            margin: 0 auto;
+            box-sizing: border-box; /* Include padding in height calculation */
+        }
+        .header {
+            position: absolute;
+            color: #03045E;
+            font-size: 28px;
+            font-weight: 500;
+            word-wrap: break-word;
+        }
+        .sub-header {
+            position: absolute;
+            color: #03045E;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 44px;
+            word-wrap: break-word;
+        }
+        .title {
+            position: absolute;
+            color: #03045E;
+            font-size: 100px;
+            font-weight: 800;
+            line-height: 116px;
+            word-wrap: break-word;
+        }
+        .section-header {
+            position: absolute;
+            color: #FCF47F;
+            font-size: 100px;
+            font-weight: 800;
+            line-height: 116px;
+            word-wrap: break-word;
+        }
+        .contact-info, .experience {
+            position: absolute;
+            color: #03045E;
+            font-size: 24px;
+            line-height: 44px;
+            word-wrap: break-word;
+        }
+        .button {
+            width: 164px;
+            height: 68px;
+            position: absolute;
+            background: #F5EE84;
+            border-radius: 6px;
+            border: 1px #474306 solid;
+            color: #474306;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .image-container {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: black;
+            border: 5px solid #474306;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px; /* Adjust position as needed */
+            width: 60px; /* Adjust size as needed */
+            height: auto;
+            z-index: 2; /* Ensure it's on top */
+        }
+        .social-icons img {
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+        }
+        /* Navigation Styles */
+        nav {
+            position: absolute;
+            top: 37px;
+            right: 20px; /* Align to the right edge with a small margin */
+            display: flex;
+            justify-content: space-between;
+            width: auto; /* Adjust width automatically based on content */
+            max-width: calc(100% - 40px); /* Ensure it fits within the container with some padding */
+        }
+        nav div {
+            font-size: 24px;
+            color: #03045E;
+            background: #F5EE84; /* Button background */
+            border-radius: 6px; /* Rounded corners */
+            border: 1px #474306 solid; /* Border styling */
+            padding: 10px 20px; /* Padding inside the button */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer; /* Cursor indicates clickable */
+            text-align: center;
+            margin: 0 5px; /* Ensure spacing between items */
+        }
+        nav div:hover {
+            background: #F1E3A8; /* Lighter background on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Large Logo at Top Left -->
+    <img src="freelance.png" alt="Logo" class="logo" />
+
+    <div class="container">
+        <!-- Header -->
+        <div id="home" class="header" style="left: 97px; top: 288px;">Hello, I’m Bojamma,</div>
+        <div class="header" style="left: 97px; top: 471px;">based in Bengaluru.</div>
+        
+        <!-- Introduction -->
+        <div id="about" class="sub-header" style="width: 1125px; left: 97px; top: 1131px;">
+            Hello! I’m KG Bojamma, an undergraduate student at Garden City University pursuing a degree in data science and cybersecurity. I have a keen interest in big data analytics and data visualization, driven by a passion for transforming complex data into compelling stories. I enjoy using tools like Python and Tableau to create insightful visualizations that help others understand data patterns and trends. I’m excited to continue learning and exploring new ways to leverage data for impactful decision-making. Thank you for visiting my portfolio!
+        </div>
+        
+        <!-- Profile Image -->
+        <div class="image-container" style="left: 831px; top: 191px;">
+            <img src="Picture portfolio.jpeg" alt="Profile Image" />
+        </div>
+        
+        <!-- Certifications -->
+        <div id="certifications" class="sub-header" style="width: 1178px; height: 913px; left: 97px; top: 2451px;">
+            <span style="font-weight: 700; text-decoration: underline;">Using Python to Interact with the Operating System<br/></span>
+            <span style="font-weight: 400;">Google<br/><a href="https://coursera.org/share/834e0db219f4073ea93fc1bcab06400a">Python Course</a><br/></span>
+            <span style="font-weight: 700; text-decoration: underline;">Introduction to Cybersecurity<br/></span>
+            <span style="font-weight: 400;">Cisco Networking Academy<br/><a href="https://www.credly.com/badges/6832d84f-6234-4f84-ab28-4d416c5e39eb/public_url">Cybersecurity Course</a><br/></span>
+            <span style="font-weight: 700; text-decoration: underline;">Introduction to Cybersecurity Essentials<br/></span>
+            <span style="font-weight: 400;">IBM<br/><a href="https://coursera.org/share/1c8cc68ac5c87568f87e3a250fb9f35e">IBM Cybersecurity</a><br/></span>
+            <span style="font-weight: 700; text-decoration: underline;">AI For Everyone<br/></span>
+            <span style="font-weight: 400;">DeepLearninAI<br/><a href="https://coursera.org/share/6635884219dcca6d1278256424cc42ba">AI Course</a><br/></span>
+            <span style="font-weight: 700; text-decoration: underline;">Teamwork Skills: Communicating Effectively in Groups<br/></span>
+            <span style="font-weight: 400;">University of Colorado Boulder<br/><a href="https://coursera.org/share/e0827025dd1afddddce88ff3aa2bd502">Teamwork Course</a><br/></span>
+            <span style="font-weight: 700; text-decoration: underline;">High Performance Collaboration: Leadership, Teamwork, and Negotiation<br/></span>
+            <span style="font-weight: 400;">Northwestern University<br/><a href="https://coursera.org/share/e0827025dd1afddddce88ff3aa2bd502">Leadership Course</a><br/></span>
+        </div>
+        
+        <!-- Contact Information -->
+        <div id="contact" class="contact-info" style="left: 385px; top: 3596px; display: flex; align-items: center;">
+            <img src="mail.png" alt="Email Icon" style="width: 24px; height: 24px; margin-right: 10px;" />
+            kgbojamma@gmail.com
+        </div>
+        <div class="contact-info" style="left: 385px; top: 3660px; display: flex; align-items: center;">
+            <img src="instagram.png" alt="Twitter Icon" style="width: 24px; height: 24px; margin-right: 10px;" />
+            @gayana_bojamma
+        </div>
+        <div class="contact-info" style="left: 385px; top: 3724px; display: flex; align-items: center;">
+            <img src="linkedin.png" alt="LinkedIn Icon" style="width: 24px; height: 24px; margin-right: 10px;" />
+            KG BOJAMMA
+        </div>
+        <div class="contact-info" style="left: 385px; top: 3788px; display: flex; align-items: center;">
+            <img src="call.png" alt="Phone Icon" style="width: 24px; height: 24px; margin-right: 10px;" />
+            9686378892
+        </div>
+
+        <!-- Education and Experience -->
+        <div style="height: 138px; left: 384px; top: 1414px; position: absolute;">
+            <div style="width: 900px; left: 0px; top: 50px; position: absolute; color: #03045E; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 44px; word-wrap: break-word;">Intern at Garden City University<br/>Company: Nerds&Geeks</div>
+            <div style="left: 0px; top: 0px; position: absolute; color: #03045E; font-size: 24px; font-family: Poppins; font-weight: 600; line-height: 40px; word-wrap: break-word;">2024-</div>
+        </div>
+        
+        <div style="left: 384px; top: 1676px; position: absolute;">
+            <span style="color: #03045E; font-size: 24px; font-family: Poppins; font-weight: 600; line-height: 40px; word-wrap: break-word;">2022-2025<br/></span>
+            <span style="color: #03045E; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 40px; word-wrap: break-word;">Garden City University<br/>BSc. Data Science & Cybersecurity</span>
+        </div>
+
+        <div style="left: 384px; top: 1938px; position: absolute;">
+            <span style="color: #03045E; font-size: 24px; font-family: Poppins; font-weight: 600; line-height: 40px; word-wrap: break-word;">2020 - 2022<br/></span>
+            <span style="color: #03045E; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 40px; word-wrap: break-word;">Coorg Institute Of Pre University College<br/>PCMB--Distinction</span>
+        </div>
+
+        <!-- Navigation and Buttons -->
+        <div class="title" style="left: 97px; top: 329px; font-family: Poppins;">data analyst</div>
+        <div class="button" style="left: 97px; top: 650px;" onclick="window.open('Resume.png', '_blank')">Resume</div>
+        <div class="section-header" style="left: 85px; top: 995px;">about.</div>
+        <div class="section-header" style="left: 97px; top: 2303px;">certifications.</div>
+        <div class="section-header" style="left: 97px; top: 3415px;">contact.</div>
+
+        <!-- Navigation -->
+        <nav>
+            <div data-scroll-to="home">Home</div>
+            <div data-scroll-to="about">About</div>
+            <div data-scroll-to="certifications">Certification</div>
+            <div data-scroll-to="contact">Contact</div>
+        </nav>
+
+        <!-- Placeholder Image -->
+        <img style="width: 298px; height: 358px; left: 834px; top: 2326px; position: absolute;" src="award.png" />
+    </div>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav div');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const sectionId = this.getAttribute('data-scroll-to');
+                    const section = document.getElementById(sectionId);
+                    if (section) {
+                        window.scrollTo({
+                            top: section.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
